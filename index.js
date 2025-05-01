@@ -99,6 +99,16 @@ console.log("Last Service Date: ",Car.lastServiceDate());
   //   to add a song, removeSong(title) to delete one, and listSongs() to log all songs currently in the playlist.
 
 // Pseudocode
+// 1.create a Playlist object with:songs(list of song titles)
+//2.Define method addSong(title)
+//3.Add title to songs list
+//4.Add method removeSong(title)
+//5.Find index of title in songs
+//6.If found, remove it from songs list
+//7.Define method listSongs();For each song in songs list
+//8. Invoke the functions
+
+
 
   function Playlist() {
     this.songs = [];
@@ -145,6 +155,12 @@ console.log("Last Service Date: ",Car.lastServiceDate());
   // getProgress() that returns a string like "3 out of 5 lessons completed".
 
 
+  // 1. Define a constructor with:title,lessons(list of lessons),completedLessons(empty list) Inside Course:
+//2.Define method markComplete(lesson)
+//3.If lesson is in lessons and not already in completedLessons:Add lessons to  completedLessons
+//4.Define method getProgress():
+//5.Return "number of completed"as a string
+//6.Create a new Course object whic contains functions,arrays objects
 
   function Course(title, lessons) {
     this.title = title;
@@ -167,7 +183,6 @@ console.log("Last Service Date: ",Car.lastServiceDate());
     };
   }
   
- 
   const jsCourse = new Course("JavaScript Basics", [
     "Variables",
     "Functions",
